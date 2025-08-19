@@ -1,5 +1,9 @@
 package test;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterTest;
+
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserType.LaunchOptions;
 import com.microsoft.playwright.Locator;
@@ -9,21 +13,30 @@ import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertTha
 
 public class setup {
 
-	public static void main(String[] args) {
-		Playwright playwright = Playwright.create();
-		Browser browser = playwright.firefox().launch(
+		static Playwright playwright = Playwright.create();
+		static Browser browser = playwright.firefox().launch(
 				new LaunchOptions().setHeadless(false));
-		Page page = browser.newPage();
+		static Page page = browser.newPage();
 		
-		page.navigate("https://www.google.com");
-		assertThat(page).hasTitle("Google");
-		Locator searchbarPage = page.locator("[name = 'q']");
-		searchbarPage.fill("Selenium");
-		searchbarPage.press("Enter");
-		assertThat(page).hasTitle("Selenium - Google Search");
+		@BeforeTest
+		public static void setup_playwright() {
+			page.navigate("https://www.google.com");
+			assertThat(page).hasTitle("Google");
+		}
 		
-		page.close();
-		browser.close();
-		playwright.close();
+		@AfterTest
+		public static void tearDown() {
+			page.close();
+			browser.close();
+			playwright.close();
+		}
+		
+		@Test
+		public void homePage() {
+			Locator searchbarPage = page.locator("[name = 'q']");
+			searchbarPage.fill("Selenium");
+			searchbarPage.press("Enter");
+			assertThat(page).hasTitle("Selenium - Google Search");
+		}
 	}
-}
+

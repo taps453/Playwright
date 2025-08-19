@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-18T20:11:01 IST" name="Default suite" finished-at="2025-08-18T20:11:18 IST" duration-ms="16971">
+    <groups>
+    </groups>
+    <test started-at="2025-08-18T20:11:01 IST" name="Default test" finished-at="2025-08-18T20:11:18 IST" duration-ms="16971">
+      <class name="test.setup">
+        <test-method is-config="true" signature="setup_playwright()[pri:0, instance:test.setup@55cb6996]" started-at="2025-08-18T20:11:01 IST" name="setup_playwright" finished-at="2025-08-18T20:11:08 IST" duration-ms="7459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_playwright -->
+        <test-method signature="homePage()[pri:0, instance:test.setup@55cb6996]" started-at="2025-08-18T20:11:08 IST" name="homePage" finished-at="2025-08-18T20:11:15 IST" duration-ms="6722" status="FAIL">
+          <exception class="org.opentest4j.AssertionFailedError">
+            <message>
+              <![CDATA[Page title expected to be: Selenium - Google Search
+Received: https://www.google.com/search?q=Selenium&sca_esv=b0a1351e93cb2bd4&source=hp&ei=gDujaLI4-aXaug-_vsWYDA&iflsig=AOw8s4IAAAAAaKNJkMqoeRzw6ALdwhGnaXbqBxie2m_f&ved=0ahUKEwiy-JfVy5SPAxX5klYBHT9fEcMQ4dUDCBA&uact=5&oq=Selenium&gs_lp=Egdnd3Mtd2l6IghTZWxlbml1bTIIEAAYgAQYsQMyBRAAGIAEMggQABiABBixAzIIEAAYgAQYsQMyBRAAGIAEMgUQABiABDIFEAAYgAQyCBAAGIAEGLEDMggQABiABBixAzIFEAAYgARI6wFQAFgAcAB4AJABAJgBXKABXKoBATG4AQPIAQD4AQGYAgGgAmqYAwCSBwMwLjGgB4YFsgcDMC4xuAdqwgcDMy0xyAcL&sclient=gws-wiz&sei=hTujaPavF8SY4-EP-YKTwAs
+
+Call log:
+  - Assert "hasTitle" with timeout 5000ms
+  - waiting for locator(":root")
+    - waiting for navigation to finish...
+    - navigated to "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DSelenium%26sca_esv%3Db0a1351e93cb2bd4%26source%3Dhp%26ei%3DgDujaLI4-aXaug-_vsWYDA%26iflsig%3DAOw8s4IAAAAAaKNJkMqoeRzw6A…"
+    6 × locator resolved to <html>…</html>
+      - unexpected value "https://www.google.com/search?q=Selenium&sca_esv=b0a1351e93cb2bd4&source=hp&ei=gDujaLI4-aXaug-_vsWYDA&iflsig=AOw8s4IAAAAAaKNJkMqoeRzw6ALdwhGnaXbqBxie2m_f&ved=0ahUKEwiy-JfVy5SPAxX5klYBHT9fEcMQ4dUDCBA&uact=5&oq=Selenium&gs_lp=Egdnd3Mtd2l6IghTZWxlbml1bTIIEAAYgAQYsQMyBRAAGIAEMggQABiABBixAzIIEAAYgAQYsQMyBRAAGIAEMgUQABiABDIFEAAYgAQyCBAAGIAEGLEDMggQABiABBixAzIFEAAYgARI6wFQAFgAcAB4AJABAJgBXKABXKoBATG4AQPIAQD4AQGYAgGgAmqYAwCSBwMwLjGgB4YFsgcDMC4xuAdqwgcDMy0xyAcL&sclient=gws-wiz&sei=hTujaPavF8SY4-EP-YKTwAs"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.opentest4j.AssertionFailedError: Page title expected to be: Selenium - Google Search
+Received: https://www.google.com/search?q=Selenium&sca_esv=b0a1351e93cb2bd4&source=hp&ei=gDujaLI4-aXaug-_vsWYDA&iflsig=AOw8s4IAAAAAaKNJkMqoeRzw6ALdwhGnaXbqBxie2m_f&ved=0ahUKEwiy-JfVy5SPAxX5klYBHT9fEcMQ4dUDCBA&uact=5&oq=Selenium&gs_lp=Egdnd3Mtd2l6IghTZWxlbml1bTIIEAAYgAQYsQMyBRAAGIAEMggQABiABBixAzIIEAAYgAQYsQMyBRAAGIAEMgUQABiABDIFEAAYgAQyCBAAGIAEGLEDMggQABiABBixAzIFEAAYgARI6wFQAFgAcAB4AJABAJgBXKABXKoBATG4AQPIAQD4AQGYAgGgAmqYAwCSBwMwLjGgB4YFsgcDMC4xuAdqwgcDMy0xyAcL&sclient=gws-wiz&sei=hTujaPavF8SY4-EP-YKTwAs
+
+Call log:
+  - Assert "hasTitle" with timeout 5000ms
+  - waiting for locator(":root")
+    - waiting for navigation to finish...
+    - navigated to "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DSelenium%26sca_esv%3Db0a1351e93cb2bd4%26source%3Dhp%26ei%3DgDujaLI4-aXaug-_vsWYDA%26iflsig%3DAOw8s4IAAAAAaKNJkMqoeRzw6A…"
+    6 × locator resolved to <html>…</html>
+      - unexpected value "https://www.google.com/search?q=Selenium&sca_esv=b0a1351e93cb2bd4&source=hp&ei=gDujaLI4-aXaug-_vsWYDA&iflsig=AOw8s4IAAAAAaKNJkMqoeRzw6ALdwhGnaXbqBxie2m_f&ved=0ahUKEwiy-JfVy5SPAxX5klYBHT9fEcMQ4dUDCBA&uact=5&oq=Selenium&gs_lp=Egdnd3Mtd2l6IghTZWxlbml1bTIIEAAYgAQYsQMyBRAAGIAEMggQABiABBixAzIIEAAYgAQYsQMyBRAAGIAEMgUQABiABDIFEAAYgAQyCBAAGIAEGLEDMggQABiABBixAzIFEAAYgARI6wFQAFgAcAB4AJABAJgBXKABXKoBATG4AQPIAQD4AQGYAgGgAmqYAwCSBwMwLjGgB4YFsgcDMC4xuAdqwgcDMy0xyAcL&sclient=gws-wiz&sei=hTujaPavF8SY4-EP-YKTwAs"
+at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:50)
+at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+at com.microsoft.playwright.impl.PageAssertionsImpl.hasTitle(PageAssertionsImpl.java:44)
+at com.microsoft.playwright.assertions.PageAssertions.hasTitle(PageAssertions.java:103)
+at test.setup.homePage(setup.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.opentest4j.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.setup@55cb6996]" started-at="2025-08-18T20:11:15 IST" name="tearDown" finished-at="2025-08-18T20:11:18 IST" duration-ms="2739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.setup -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
