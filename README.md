@@ -1,4 +1,4 @@
-Playwright - 
+**Playwright - **
 
 It's an open source, cross browser automation library developed by Microsoft.It's a Node.js based library. 
 It support Chromium, FireFox and Webkit (safari and IOS browser) with a single API. 
@@ -36,7 +36,7 @@ browser context(Shared session)
 browser.newContext() create a new isolated session (private), then create a page inside it.
 
 
-Script- 
+**Script- **
 Playwright playwright = Playwright.create()
 Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false)); 
 Page page = browser.newPage();
